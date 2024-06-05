@@ -1,0 +1,11 @@
+<p>cart works!</p>
+<form [formGroup]="form">
+<input formControlName="fruit" value="Капуста" nbInput/>
+  <button (click)="addFruit()" class="add-btn" status="success" nbButton>Добавить</button>
+</form>
+
+<nb-list>
+  <nb-list-item *ngFor="let fruit of fruits">
+    <li>{{ fruit }}</li>
+  </nb-list-item>
+</nb-list>
